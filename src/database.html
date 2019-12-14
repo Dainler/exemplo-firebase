@@ -1,0 +1,37 @@
+@@include('./includes/header.html')
+
+
+<section class="container p-5 mutop">
+  <div class="text-center my-5">
+    <h1 class="display-4 text-primary">Realtime Database</h1>
+    <span class="h6 d-block">Grupo: Anderson Wladis, Dainler Oliveira, Jhenifer Gauber, Luíder Elias.</span>
+  </div>
+
+  <div class="row justify-content-md-center">
+    <div class="col card p-5">
+      <form>
+        <div class="form-group">
+          <label for="nameInput">Nome</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="Nome">
+        </div>
+        <div class="form-group">
+          <label for="ageInput">Idade</label>
+          <input type="number" class="form-control" id="ageInput" placeholder="Idade">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-lg btn-block btn-primary" id="addButton">Adicionar</button>
+        </div>
+      </form>
+    </div>
+    <ul class="col list-group mx-5" id="usersList"></ul>
+  </div>
+
+
+
+
+
+</section>
+
+
+
+@@include('./includes/footer.html')
