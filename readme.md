@@ -52,7 +52,7 @@ O Firebase é uma plataforma de desenvolvimento de aplicativos para dispositivos
 ## Para implantar no Firebase, você usará a Firebase CLI, uma ferramenta de linha de comando via NPM
 
 **Execute o seguinte comando npm para instalar as ferramentas CLI firebase:**
-'npm install -g firebase-tools'
+`npm install -g firebase-tools`
 
 **Iniciar seu projeto**
 Execute este comando no diretório raiz do seu app:
