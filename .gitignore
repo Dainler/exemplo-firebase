@@ -46,3 +46,5 @@ node_modules
 
 *.sublime-workspace
 *.sublime-project
+.firebase/hosting.cw.cache
+.firebase/hosting.cHVibGlj.cache
