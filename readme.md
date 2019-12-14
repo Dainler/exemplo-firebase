@@ -4,14 +4,12 @@ Projeto com demonstração e utilização na prática da tecnologia do Firebase,
 
 ## Links
 
-- [cpw-firebase](https://cpw-firebase.web.app) 
-- [cpw-firebase](https://cpw-firebase.firebaseapp.com)
+- (https://cpw-firebase.web.app) 
+- (https://cpw-firebase.firebaseapp.com)
 - [Firebase](https://firebase.google.com/?hl=pt-BR)
 - [Documentation](https://firebase.google.com/docs?hl=pt-BR)
 - [Firebase Open Source](https://firebaseopensource.com)
 - [Firebase - NPM](https://www.npmjs.com/package/firebase)
-
-
 
 ## Tecnologias
 
@@ -30,7 +28,7 @@ Backend as a service: Conhecido como " back-end como serviço ", fornece aos des
 ## Firebase
 O Firebase é uma plataforma de desenvolvimento de aplicativos para dispositivos móveis e web desenvolvida pela Firebase, Inc. em 2011 e adquirida pelo Google em 2014. Em outubro de 2018, a plataforma Firebase possuía 18 produtos. Dentre tantos serviços, abordaremos o **Real-Time Database**, **Authentication** e **Hosting**:
 
-# Criando um projeto no console Firebase
+## Criando um projeto no console Firebase
 ## Material de apoio
 
 *	Ir para o console
@@ -54,30 +52,29 @@ O Firebase é uma plataforma de desenvolvimento de aplicativos para dispositivos
 **Execute o seguinte comando npm para instalar as ferramentas CLI firebase:**
 - `npm install -g firebase-tools`
 
-**Iniciar seu projeto**
-**Execute este comando no diretório raiz do seu app:**
-`firebase init`
+**Iniciar seu projeto e execute este comando no diretório raiz do seu app:**
+- `firebase init`
 
 **Faça login no Google:**
-`firebase login`
+- `firebase login`
 
 **Fazer logout no Google:**
-`firebase logout`
+- `firebase logout`
 
 **Verificar todos os comandos:**
-`firebase`
+- `firebase`
 
 **Listar projetos**
-`firebase projects:list`
-`firebase list`
+- `firebase projects:list`
+- `firebase list`
 
 **Iniciar serviço de Hosts**
-`firebase init hosting`
+- `firebase init hosting`
 
 **Fazer implantação/subir arquivos:**
-`firebase deploy --only hosting:cpw-trabalho`
-`https://cpw-trabalho.web.app/`
+- `firebase deploy --only hosting:cpw-trabalho`
+- `https://cpw-trabalho.web.app/`
 
 **Inicie o servidor local para desenvolvimento. Execute o seguinte comando a partir da raiz do seu diretório de aplicativos local:**
-`firebase serve`
+- `firebase serve`
 
