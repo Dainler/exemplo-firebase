@@ -19,7 +19,7 @@ const fileinclude = require('gulp-file-include');
 function browser() {
   browserSync.init({
     server: {
-      baseDir: "./deploy"
+      baseDir: "./public"
     }
   });
 }
@@ -41,7 +41,7 @@ function compileSASS () {
 			browsers: ['last 2 versions'],
 			cascade: false
 		}))
-		.pipe(gulp.dest('deploy/css/'))
+		.pipe(gulp.dest('public/css/'))
 		.pipe(browserSync.stream());
 }
 gulp.task('compileSASS', compileSASS);
@@ -76,7 +76,7 @@ function compileJS () {
 			presets: ['env']
 		}))
 		.pipe(uglify())
-		.pipe(gulp.dest('deploy/js/'))
+		.pipe(gulp.dest('public/js/'))
 		.pipe(browserSync.stream());
 }
 gulp.task('compileJS', compileJS);
@@ -97,7 +97,7 @@ function compilePlugins () {
 		])
 		.pipe(concat('plugins.min.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('deploy/js/'))
+		.pipe(gulp.dest('public/js/'))
 		.pipe(browserSync.stream());
 }
 gulp.task('compilePlugins', compilePlugins);
@@ -109,13 +109,14 @@ ex -> @@include('./includes/header.html')
 
 function compileHTML (done) {
 	gulp.src([
-		'./src/**/index.html'
+		'./src/**/index.html',
+		'./src/**/realtimedatabase.html'
 	])
 		.pipe(fileinclude({
 			prefix: '@@',
 			basepath: '@file'
 		}))
-		.pipe(gulp.dest('./deploy'));
+		.pipe(gulp.dest('./public'));
 	done();
 }
 gulp.task('compileHTML', compileHTML);
@@ -132,7 +133,7 @@ function superviseFile () {
 	
   gulp.watch('src/**/*.html', compileHTML).on('change', browserSync.reload);
 	
-  gulp.watch('deploy/**/*.html').on('change', browserSync.reload);
+  gulp.watch('public/**/*.html').on('change', browserSync.reload);
 }
 gulp.task('superviseFile', superviseFile);
 
