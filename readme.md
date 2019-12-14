@@ -52,32 +52,32 @@ O Firebase é uma plataforma de desenvolvimento de aplicativos para dispositivos
 ## Para implantar no Firebase, você usará a Firebase CLI, uma ferramenta de linha de comando via NPM
 
 **Execute o seguinte comando npm para instalar as ferramentas CLI firebase:**
-`npm install -g firebase-tools`
+- `npm install -g firebase-tools`
 
 **Iniciar seu projeto**
-Execute este comando no diretório raiz do seu app:
-firebase init
+**Execute este comando no diretório raiz do seu app:**
+`firebase init`
 
 **Faça login no Google:**
-firebase login
+`firebase login`
 
 **Fazer logout no Google:**
-firebase logout
+`firebase logout`
 
 **Verificar todos os comandos:**
-firebase
+`firebase`
 
 **Listar projetos**
-firebase projects:list
-firebase list
+`firebase projects:list`
+`firebase list`
 
 **Iniciar serviço de Hosts**
-firebase init hosting
+`firebase init hosting`
 
 **Fazer implantação/subir arquivos:**
-firebase deploy --only hosting:cpw-trabalho
-https://cpw-trabalho.web.app/
+`firebase deploy --only hosting:cpw-trabalho`
+`https://cpw-trabalho.web.app/`
 
 **Inicie o servidor local para desenvolvimento. Execute o seguinte comando a partir da raiz do seu diretório de aplicativos local:**
-firebase serve
+`firebase serve`
 
