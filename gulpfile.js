@@ -116,7 +116,7 @@ function compileHTML (done) {
 			prefix: '@@',
 			basepath: '@file'
 		}))
-		.pipe(gulp.dest('./public'));
+		.pipe(gulp.dest('./public/'));
 	done();
 }
 gulp.task('compileHTML', compileHTML);
