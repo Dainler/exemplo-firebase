@@ -110,7 +110,7 @@ ex -> @@include('./includes/header.html')
 function compileHTML (done) {
 	gulp.src([
 		'./src/**/index.html',
-		'./src/**/realtimedatabase.html'
+		'./src/**/database.html'
 	])
 		.pipe(fileinclude({
 			prefix: '@@',
